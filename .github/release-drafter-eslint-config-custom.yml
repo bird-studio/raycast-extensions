@@ -1,0 +1,35 @@
+name-template: "eslint-config-custom`v$RESOLVED_VERSION`"
+tag-template: "eslint-config-custom`v$RESOLVED_VERSION`"
+
+tag-prefix: eslint-config-custom-
+
+include-labels:
+  - "eslint-config-custom`o.x.x`"
+  - "eslint-config-custom`x.o.x`"
+  - "eslint-config-custom`x.x.o`"
+  - "eslint-config-custom`x.x.x`"
+
+version-resolver:
+  major:
+    labels:
+      - "eslint-config-custom`o.x.x`"
+  minor:
+    labels:
+      - "eslint-config-custom`x.o.x`"
+  patch:
+    labels:
+      - "eslint-config-custom`x.x.o`"
+
+categories:
+  - title: "Major`o.x.x`"
+    label: "eslint-config-custom`o.x.x`"
+  - title: "Minor`x.o.x`"
+    label: "eslint-config-custom`x.o.x`"
+  - title: "Patch`x.x.o`"
+    label: "eslint-config-custom`x.x.o`"
+  - title: "Other`x.x.x`"
+    label: "eslint-config-custom`x.x.x`"
+
+template: |
+  # What's Changed
+  $CHANGES

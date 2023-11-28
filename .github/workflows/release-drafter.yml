@@ -1,0 +1,63 @@
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  changes:
+    runs-on: ubuntu-latest
+    if: ${{ github.actor != 'dependabot[bot]' }}
+    outputs:
+      eslint-config-custom: ${{ steps.filter.outputs.eslint-config-custom }}
+      tsconfig: ${{ steps.filter.outputs.tsconfig }}
+      talking-translator: ${{ steps.filter.outputs.talking-translator }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          filters: |
+            eslint-config-custom:
+              - 'packages/eslint-config-custom/**'
+            tsconfig:
+              - 'packages/tsconfig/**'
+            talking-translator:
+              - 'packages/talking-translator/**'
+
+  eslint-config-custom:
+    needs: changes
+    runs-on: ubuntu-latest
+    if: ${{ github.actor != 'dependabot[bot]' && needs.changes.outputs.eslint-config-custom == 'true' }}
+    steps:
+      - name: eslint-config-custom-drafter
+        uses: release-drafter/release-drafter@v5
+        with:
+          config-name: release-drafter-eslint-config-custom.yml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  tsconfig:
+    needs: changes
+    runs-on: ubuntu-latest
+    if: ${{ github.actor != 'dependabot[bot]' && needs.changes.outputs.tsconfig == 'true' }}
+    steps:
+      - name: tsconfig-drafter
+        uses: release-drafter/release-drafter@v5
+        with:
+          config-name: release-drafter-tsconfig.yml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  talking-translator:
+    needs: changes
+    runs-on: ubuntu-latest
+    if: ${{ github.actor != 'dependabot[bot]' && needs.changes.outputs.talking-translator == 'true' }}
+    steps:
+      - name: talking-translator-drafter
+        uses: release-drafter/release-drafter@v5
+        with:
+          config-name: release-drafter-talking-translator.yml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

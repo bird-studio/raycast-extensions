@@ -1,0 +1,62 @@
+version: v1
+
+labels:
+  - label: "eslint-config-custom`o.x.x`"
+    sync: true
+    matcher:
+      commits: ":`o.x.x`\\(eslint-config-custom\\): .*"
+
+  - label: "eslint-config-custom`x.o.x`"
+    sync: true
+    matcher:
+      commits: ":`x.o.x`\\(eslint-config-custom\\): .*"
+
+  - label: "eslint-config-custom`x.x.o`"
+    sync: true
+    matcher:
+      commits: ":`x.x.o`\\(eslint-config-custom\\): .*"
+
+  - label: "eslint-config-custom`x.x.x`"
+    sync: true
+    matcher:
+      commits: ":`x.x.x`\\(eslint-config-custom\\): .*"
+
+  - label: "tsconfig`o.x.x`"
+    sync: true
+    matcher:
+      commits: ":`o.x.x`\\(tsconfig\\): .*"
+
+  - label: "tsconfig`x.o.x`"
+    sync: true
+    matcher:
+      commits: ":`x.o.x`\\(tsconfig\\): .*"
+
+  - label: "tsconfig`x.x.o`"
+    sync: true
+    matcher:
+      commits: ":`x.x.o`\\(tsconfig\\): .*"
+
+  - label: "tsconfig`x.x.x`"
+    sync: true
+    matcher:
+      commits: ":`x.x.x`\\(tsconfig\\): .*"
+
+  - label: "talking-translator`o.x.x`"
+    sync: true
+    matcher:
+      commits: ":`o.x.x`\\(talking-translator\\): .*"
+
+  - label: "talking-translator`x.o.x`"
+    sync: true
+    matcher:
+      commits: ":`x.o.x`\\(talking-translator\\): .*"
+
+  - label: "talking-translator`x.x.o`"
+    sync: true
+    matcher:
+      commits: ":`x.x.o`\\(talking-translator\\): .*"
+
+  - label: "talking-translator`x.x.x`"
+    sync: true
+    matcher:
+      commits: ":`x.x.x`\\(talking-translator\\): .*"

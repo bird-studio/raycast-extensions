@@ -1,0 +1,35 @@
+name-template: "tsconfig`v$RESOLVED_VERSION`"
+tag-template: "tsconfig`v$RESOLVED_VERSION`"
+
+tag-prefix: tsconfig-
+
+include-labels:
+  - "tsconfig`o.x.x`"
+  - "tsconfig`x.o.x`"
+  - "tsconfig`x.x.o`"
+  - "tsconfig`x.x.x`"
+
+version-resolver:
+  major:
+    labels:
+      - "tsconfig`o.x.x`"
+  minor:
+    labels:
+      - "tsconfig`x.o.x`"
+  patch:
+    labels:
+      - "tsconfig`x.x.o`"
+
+categories:
+  - title: "Major`o.x.x`"
+    label: "tsconfig`o.x.x`"
+  - title: "Minor`x.o.x`"
+    label: "tsconfig`x.o.x`"
+  - title: "Patch`x.x.o`"
+    label: "tsconfig`x.x.o`"
+  - title: "Other`x.x.x`"
+    label: "tsconfig`x.x.x`"
+
+template: |
+  # What's Changed
+  $CHANGES
