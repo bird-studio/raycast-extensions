@@ -1,4 +1,4 @@
-# Raycasts
+# Raycast extensions
 
 ## Development
 
