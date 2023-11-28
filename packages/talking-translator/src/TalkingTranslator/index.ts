@@ -1,0 +1,1 @@
+export { TalkingTranslator } from "./TalkingTranslator";
