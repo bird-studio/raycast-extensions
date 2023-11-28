@@ -1,0 +1,70 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "version": "1.0.0",
+  "name": "talking-translator",
+  "title": "Talking Translator",
+  "description": "It is a translation function that speaks English.",
+  "icon": "command-icon.png",
+  "author": "akira-toriyama",
+  "categories": [
+    "Developer Tools"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "index",
+      "title": "Translate",
+      "description": "Translates the entered value.",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "DEEPL_API_KEY",
+      "type": "textfield",
+      "title": "Deepl api key",
+      "description": "Deepl api key",
+      "required": true
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "1.62.1",
+    "@raycast/utils": "1.10.1",
+    "deepl-node": "1.11.0",
+    "ts-pattern": "5.0.5"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "1.0.8",
+    "@tsconfig/node20": "20.1.2",
+    "@tsconfig/strictest": "2.0.2",
+    "@types/node": "20.8.10",
+    "@types/react": "18.2.27",
+    "@typescript-eslint/eslint-plugin": "6.11.0",
+    "@typescript-eslint/parser": "6.11.0",
+    "@vitest/coverage-v8": "0.34.6",
+    "eslint": "8.54.0",
+    "eslint-config-custom": "workspace:*",
+    "eslint-plugin-use-encapsulation": "1.1.0",
+    "jscpd": "3.5.10",
+    "jsdom": "22.1.0",
+    "prettier": "3.1.0",
+    "ts-unused-exports": "10.0.1",
+    "tsconfig": "workspace:*",
+    "typescript": "5.2.2",
+    "vite": "5.0.2",
+    "vitest": "0.34.6"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish",
+    "qualityCheck": "pnpm run '/^qualityCheck:.*/'",
+    "qualityCheck:lint-fmt": "eslint --max-warnings 0 --ignore-path .gitignore . && prettier  --check --ignore-path .gitignore src",
+    "qualityCheck:type": "tsc --project ./tsconfig.json --noEmit",
+    "qualityCheck:findDeadCode": "pnpm ts-unused-exports tsconfig.json $(find ./src -name '*.ts' -or -name '*.tsx') --excludePathsFromReport='index.ts'",
+    "qualityCheck:redundancy": "jscpd src",
+    "qualityCheck:unitTest": "pnpm vitest run --coverage"
+  }
+}
