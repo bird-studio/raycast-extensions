@@ -28,7 +28,7 @@
     }
   ],
   "dependencies": {
-    "@raycast/api": "1.62.1",
+    "@raycast/api": "1.64.2",
     "@raycast/utils": "1.10.1",
     "deepl-node": "1.11.0",
     "ts-pattern": "5.0.5"
