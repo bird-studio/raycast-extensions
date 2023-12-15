@@ -51,7 +51,7 @@
     "ts-unused-exports": "10.0.1",
     "tsconfig": "workspace:*",
     "typescript": "5.3.3",
-    "vite": "5.0.9",
+    "vite": "5.0.10",
     "vitest": "1.0.4"
   },
   "scripts": {
