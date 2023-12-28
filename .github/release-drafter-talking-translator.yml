@@ -1,7 +1,7 @@
 name-template: "talking-translator`v$RESOLVED_VERSION`"
 tag-template: "talking-translator`v$RESOLVED_VERSION`"
 
-tag-prefix: talking-translator-
+tag-prefix: talking-translator`v
 
 include-labels:
   - "talking-translator`o.x.x`"

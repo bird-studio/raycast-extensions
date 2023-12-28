@@ -1,7 +1,7 @@
 name-template: "eslint-config-custom`v$RESOLVED_VERSION`"
 tag-template: "eslint-config-custom`v$RESOLVED_VERSION`"
 
-tag-prefix: eslint-config-custom-
+tag-prefix: eslint-config-custom`v
 
 include-labels:
   - "eslint-config-custom`o.x.x`"

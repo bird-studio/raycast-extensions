@@ -1,7 +1,7 @@
 name-template: "tsconfig`v$RESOLVED_VERSION`"
 tag-template: "tsconfig`v$RESOLVED_VERSION`"
 
-tag-prefix: tsconfig-
+tag-prefix: tsconfig`v
 
 include-labels:
   - "tsconfig`o.x.x`"
