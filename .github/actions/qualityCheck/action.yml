@@ -8,7 +8,7 @@ runs:
 
     - name: Install
       shell: bash
-      run: pnpm install
+      run: pnpm install --no-frozen-lockfile
 
     - name: Quality check
       shell: bash
