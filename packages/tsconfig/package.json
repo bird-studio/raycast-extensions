@@ -5,5 +5,8 @@
   "devDependencies": {
     "@tsconfig/node20": "20.1.2",
     "@tsconfig/strictest": "2.0.2"
+  },
+  "scripts": {
+    "bump": "pnpm upgrade --latest"
   }
 }

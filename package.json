@@ -15,6 +15,7 @@
   "private": true,
   "scripts": {
     "qualityCheck": "pnpm run '/^qualityCheck:.*/'",
-    "qualityCheck:talking-translator": "pnpm run --filter='talking-translator' qualityCheck"
+    "qualityCheck:talking-translator": "pnpm run --filter='talking-translator' qualityCheck",
+    "bump": "pnpm run --filter='*' bump"
   }
 }
