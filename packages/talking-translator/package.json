@@ -37,7 +37,7 @@
     "@raycast/eslint-config": "1.0.8",
     "@tsconfig/node20": "20.1.2",
     "@tsconfig/strictest": "2.0.2",
-    "@types/node": "20.11.14",
+    "@types/node": "20.11.16",
     "@types/react": "18.2.48",
     "@typescript-eslint/eslint-plugin": "6.20.0",
     "@typescript-eslint/parser": "6.20.0",
