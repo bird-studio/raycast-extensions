@@ -32,7 +32,7 @@ jobs:
     if: ${{ github.actor != 'dependabot[bot]' && needs.changes.outputs.eslint-config-custom == 'true' }}
     steps:
       - name: eslint-config-custom-drafter
-        uses: release-drafter/release-drafter@v5
+        uses: release-drafter/release-drafter@v6
         with:
           config-name: release-drafter-eslint-config-custom.yml
         env:
@@ -44,7 +44,7 @@ jobs:
     if: ${{ github.actor != 'dependabot[bot]' && needs.changes.outputs.tsconfig == 'true' }}
     steps:
       - name: tsconfig-drafter
-        uses: release-drafter/release-drafter@v5
+        uses: release-drafter/release-drafter@v6
         with:
           config-name: release-drafter-tsconfig.yml
         env:
@@ -56,7 +56,7 @@ jobs:
     if: ${{ github.actor != 'dependabot[bot]' && needs.changes.outputs.talking-translator == 'true' }}
     steps:
       - name: talking-translator-drafter
-        uses: release-drafter/release-drafter@v5
+        uses: release-drafter/release-drafter@v6
         with:
           config-name: release-drafter-talking-translator.yml
         env:
