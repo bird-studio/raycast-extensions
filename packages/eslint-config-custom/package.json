@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "devDependencies": {
     "@raycast/eslint-config": "1.0.8",
-    "@tsconfig/strictest": "2.0.2",
+    "@tsconfig/strictest": "2.0.3",
     "@typescript-eslint/eslint-plugin": "6.21.0",
     "@typescript-eslint/parser": "6.21.0",
     "eslint": "8.56.0",
