@@ -62,7 +62,7 @@
     "publish": "npx @raycast/api@latest publish",
     "bump": "pnpm upgrade --latest",
     "qualityCheck": "pnpm run '/^qualityCheck:.*/'",
-    "qualityCheck:lint-fmt": "eslint --max-warnings 0 --ignore-path .gitignore . && prettier  --check --ignore-path .gitignore src",
+    "qualityCheck:lint-fmt": "eslint --max-warnings 0 --ignore-path .gitignore src && prettier  --check --ignore-path .gitignore src",
     "qualityCheck:type": "tsc --project ./tsconfig.json --noEmit",
     "qualityCheck:findDeadCode": "pnpm ts-unused-exports tsconfig.json $(find ./src -name '*.ts' -or -name '*.tsx') --excludePathsFromReport='index.ts'",
     "qualityCheck:redundancy": "jscpd src",
