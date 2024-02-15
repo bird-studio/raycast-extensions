@@ -31,7 +31,7 @@
     "@raycast/api": "1.67.1",
     "@raycast/utils": "1.12.4",
     "deepl-node": "1.11.1",
-    "ts-pattern": "5.0.6"
+    "ts-pattern": "5.0.8"
   },
   "devDependencies": {
     "@raycast/eslint-config": "1.0.8",
