@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "devDependencies": {
     "@tsconfig/node20": "20.1.3",
-    "@tsconfig/strictest": "2.0.3"
+    "@tsconfig/strictest": "2.0.4"
   },
   "scripts": {
     "bump": "pnpm upgrade --latest"
