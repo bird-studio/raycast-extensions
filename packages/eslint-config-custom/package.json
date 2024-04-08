@@ -6,7 +6,7 @@
     "@raycast/eslint-config": "1.0.8",
     "@tsconfig/strictest": "2.0.5",
     "@typescript-eslint/eslint-plugin": "7.5.0",
-    "@typescript-eslint/parser": "7.5.0",
+    "@typescript-eslint/parser": "7.6.0",
     "eslint": "9.0.0",
     "eslint-plugin-use-encapsulation": "1.1.0",
     "prettier": "3.2.5",
