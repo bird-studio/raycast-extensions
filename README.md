@@ -14,3 +14,4 @@
 ファイル追加
 
 - .github/release-drafter-`new-plugin`.yml
+xx
