@@ -10,7 +10,7 @@
     "eslint": "9.0.0",
     "eslint-plugin-use-encapsulation": "1.1.0",
     "prettier": "3.2.5",
-    "typescript": "5.4.4"
+    "typescript": "5.5.2"
   },
   "scripts": {
     "bump": "pnpm upgrade --latest"
